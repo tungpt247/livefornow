@@ -80,6 +80,7 @@ test: &test
 #
 production:
   <<: *default
+  host: ec2-54-163-235-165.compute-1.amazonaws.com
   database: d3esunf4cnulg0
   username: bgzvnwmdbttgbq
   password: <%= ENV['SAYNEWS_DATABASE_PASSWORD'] %>
