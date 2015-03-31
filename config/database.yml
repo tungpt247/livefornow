@@ -80,8 +80,8 @@ test: &test
 #
 production:
   <<: *default
-  database: saynews_production
-  username: saynews
+  database: d3esunf4cnulg0
+  username: bgzvnwmdbttgbq
   password: <%= ENV['SAYNEWS_DATABASE_PASSWORD'] %>
 
 cucumber:
