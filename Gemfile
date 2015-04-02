@@ -35,7 +35,11 @@ gem 'slim-rails', '~> 3.0.1'
 
 gem 'devise', '~> 3.4.1'
 
+gem 'geocoder', '~> 1.2.8'
+
 group :development do
+  # Annotate ActiveRecord models
+  gem 'annotate', '~> 2.6.6' #https://github.com/ctran/annotate_models
   # Use Capistrano for deployment
   gem 'capistrano-rails', require: false
   gem 'capistrano-puma', require: false

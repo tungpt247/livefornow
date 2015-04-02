@@ -105,3 +105,12 @@ Comments
 	https://relishapp.com/rspec/rspec-rails/docs/gettingstarted
 	https://cukes.info/install-cucumber-rails.html
 
+
+#Setup on Heroku
+
+	
+#### Setting environment on Heroku intead commit .env file
+	$ heroku config:set SAYNEWS_DATABASE_PASSWORD=xxx --app liveinfo
+	
+### Setting database
+	Automation run migrate during deployment to heroku with buildpacks
