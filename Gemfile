@@ -14,6 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
+gem 'slim-rails', '~> 3.0.1'
+
 gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
@@ -27,24 +29,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-gem 'slim-rails', '~> 3.0.1'
-
 gem 'devise', '~> 3.4.1'
-
 gem 'geocoder', '~> 1.2.8'
 
+# Use Unicorn as the app server
+gem 'unicorn'
+
 group :development do
-  # Annotate ActiveRecord models
-  gem 'annotate', '~> 2.6.6' #https://github.com/ctran/annotate_models
   # Use Capistrano for deployment
   gem 'capistrano-rails', require: false
   gem 'capistrano-puma', require: false
   gem 'capistrano-bundle', require: false
   gem 'capistrano-rvm', require: false
+  gem 'rvm-capistrano'
+  gem 'capistrano3-unicorn'
+  gem 'annotate', '~> 2.6.6' #https://github.com/ctran/annotate_models - autogenerate scheme models
 end
 
 group :development, :test do

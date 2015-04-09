@@ -6,8 +6,32 @@
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
+set :rails_env, "production"
+
+server 'liveinfo.vps.com',
+  user: 'vagrant',
+  roles: %w{ web app db },
+  ssh_options: {
+    forward_agent: false,
+    keys: "/Users/tungphan/2015/training/tungphan-training/chef/chefstart/.kitchen/kitchen-vagrant/kitchen-chefstart-liveinfo-ubuntu-1204/.vagrant/machines/default/virtualbox/private_key",
+    auth_methods: %w(publickey password)
+  }
+
+#   ssh_options: {
+#     user: 'user_name', # overrides user setting above
+#     keys: %w(/home/user_name/.ssh/id_rsa),
+#     forward_agent: false,
+#     auth_methods: %w(publickey password)
+#     # password: 'please use keys'
+#   }
 
 
+# server 'uvo12vkowrm6kxlvz1r.vm.cld.sr',
+#   user: 'sysadmin',
+#   roles: %w{ web app db },
+#   ssh_options: {
+#     forward_agent: true
+#   }
 
 # role-based syntax
 # ==================
