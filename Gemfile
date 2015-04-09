@@ -41,7 +41,6 @@ group :development do
   gem 'capistrano-puma', require: false
   gem 'capistrano-bundle', require: false
   gem 'capistrano-rvm', require: false
-  gem 'rvm-capistrano'
   gem 'capistrano3-unicorn'
   gem 'annotate', '~> 2.6.6' #https://github.com/ctran/annotate_models - autogenerate scheme models
 end

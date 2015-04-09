@@ -7,9 +7,9 @@ set :application, 'liveinfo'
 # setup user deploy
 set :deploy_user, 'vagrant'
 
-set :rvm_ruby_string, :local
-set :rvm_autolibs_flag, "read-only"
-
+# set :rvm_ruby_string, :local
+# set :rvm_autolibs_flag, "read-only"
+set :rvm_ruby_version, '2.2.0'
 # setup repo details
 set :repo_url, 'https://github.com/tungpt247/liveinfo.git'
 
