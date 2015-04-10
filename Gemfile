@@ -37,10 +37,11 @@ gem 'unicorn'
 
 group :development do
   # Use Capistrano for deployment
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-puma', require: false
-  gem 'capistrano-bundle', require: false
-  gem 'capistrano-rvm', require: false
+  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano-rails'
+  gem 'capistrano-puma'
+  gem 'capistrano-bundle'
+  gem 'capistrano-rvm'
   gem 'capistrano3-unicorn'
   gem 'annotate', '~> 2.6.6' #https://github.com/ctran/annotate_models - autogenerate scheme models
 end

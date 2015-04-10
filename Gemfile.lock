@@ -361,6 +361,7 @@ DEPENDENCIES
   annotate (~> 2.6.6)
   bootstrap-sass (~> 3.3.4.1)
   byebug
+  capistrano (~> 3.4.0)
   capistrano-bundle
   capistrano-puma
   capistrano-rails
