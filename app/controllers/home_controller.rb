@@ -7,8 +7,8 @@ class HomeController < ApplicationController
     20.times do |i|
       arr << {
         "id" => i,
-        "title" => "Product #{i+1}",
-        "photo" => "http://api.randomuser.me/portraits/med/women/#{i}.jpg"
+        "title" => Faker::Commerce.product_name,
+        "photo" => Faker::Avatar.image
       }
     end
 

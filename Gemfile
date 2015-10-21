@@ -56,6 +56,8 @@ group :development, :test do
   gem  'html2slim'
 end
 
+gem 'faker'
+
 group :test do
   gem 'faker'
   gem 'minitest'
